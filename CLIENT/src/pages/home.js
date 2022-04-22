@@ -8,6 +8,11 @@ class Home extends Component {
         <Container>
                 
             <div>
+                <div>
+                    <h2 className="text-above">
+                        DOrgan - The Decentralized Way.
+                    </h2>
+                </div>
                 <img className="home" src={'https://ak.picdn.net/shutterstock/videos/1078197101/thumb/7.jpg'} width="100"  alt="Not Found"/>
                 <div id="landing-header">
                     <Segment basic textAlign={"center"}>

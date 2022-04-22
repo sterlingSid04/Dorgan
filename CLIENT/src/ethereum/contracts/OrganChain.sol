@@ -155,18 +155,5 @@ contract OrganChain{
         }
     }
     
-    function transplantMatch(address _recipient_addr) public  {
-        for(uint i=0 ; i<donor_arr.length ; i++)
-        {
-            if( !Donors[donor_arr[i]].matchFound 
-            && (keccak256(abi.encodePacked(Recipients[_recipient_addr].organ)) == keccak256(abi.encodePacked(Donors[donor_arr[i]].organ))) 
-            && (keccak256(abi.encodePacked(Recipients[_recipient_addr].bloodgroup)) == keccak256(abi.encodePacked(Donors[donor_arr[i]].bloodgroup))))
-            {   
-                Transplants[_recipient_addr] = Transplant(_recipient_addr,donor_arr[i],true);
-                Donors[donor_arr[i]].recipientId = _recipient_addr;
-                Recipients[_recipient_addr].matchFound = true;
-                Donors[donor_arr[i]].matchFound = true;
-            }
-        }
-    }
+    
 }
