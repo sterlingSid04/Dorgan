@@ -10,7 +10,6 @@ import Home from './pages/home';
 import ApproveDonor from './pages/hospital/approve-donor';
 import PatientRecord from './pages/hospital/patient-record';
 import RegisterRecipient from './pages/hospital/register-recipient';
-import TransplantMatch  from './pages/hospital/transplant-match';
 
 class Routes extends Component{
     render(){
@@ -32,10 +31,6 @@ class Routes extends Component{
                 }
                 { window.localStorage.getItem("isAuthenticated") ?
                     <Route exact path="/hospital/patient-record" component={PatientRecord} />
-                    : <Redirect to="/hospital-login" />
-                }
-                { window.localStorage.getItem("isAuthenticated") ?
-                    <Route exact path="/hospital/transplant-match" render={()=><TransplantMatch/>} />
                     : <Redirect to="/hospital-login" />
                 }
             </Switch>

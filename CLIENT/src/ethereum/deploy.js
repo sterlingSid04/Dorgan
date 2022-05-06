@@ -3,9 +3,9 @@ const Web3 = require('web3');
 const compiledOrganChain = require('./build/OrganChain.json')
 
 const provider = new  HDWalletProvider(
-    'monitor speak push thunder veteran alpha lobster loyal field deliver run salon',
+    'property buffalo jaguar where exit deer blade ceiling suit about carpet market',
     // '#PASTE YOUR ACCOUNT MNEMONIC SEED WORDS HERE#',
-    'https://rinkeby.infura.io/v3/a02e8aeac81f41cca74aa1260ad4fde2'
+    'https://rinkeby.infura.io/v3/d9bbf46ffdde44839ac51b798c3a6f08'
 );
 
 const web3 = new Web3(provider);
