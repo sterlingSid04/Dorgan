@@ -41,8 +41,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ![Screenshot](/CLIENT/public/images/TechStack.PNG)
 
-### License
-
-This project is available under MIT license. See the [LICENSE](/LICENSE) file for more info.
 
 
